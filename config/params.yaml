@@ -1,0 +1,23 @@
+/**/sam_segmenter_node:
+  ros__parameters:
+    backend_engine: sam3_cpp
+    model_family: sam3
+    model_path: models/sam3-q4_0.ggml
+    use_gpu: true
+    always_hot: true
+    num_threads: 6
+    encode_img_size: 0
+    single_frame_mode: true
+    conf_threshold: 0.5
+    target_object: ''
+    acquisition_timeout: 5.0
+    inference_timeout: 10.0
+    max_image_pixels: 4194304
+    image_topic: /camera/camera/color/image_raw
+    mask_topic: /perc/grasp/mask
+    selected_mask_topic: /perc/grasp/selected_mask
+    instances_topic: /perc/grasp/instances
+    inference_header_topic: /perc/grasp/segmentation_input
+    detection_topic: /perc/grasp/detections
+    source_id: ''
+    arm_id: ''

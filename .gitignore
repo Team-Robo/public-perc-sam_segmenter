@@ -1,0 +1,82 @@
+# ROS, CMake and package build outputs
+build/
+install/
+log/
+devel/
+dist/
+.cmake/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+*.o
+*.a
+*.so
+
+# Python caches and packaging outputs
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.eggs/
+.ipynb_checkpoints/
+
+# Local experiments and generated reports
+test/
+tests/
+scratch/
+doc/
+reports/
+*.log
+yolo_tracking_log.json
+
+# Local environments and credentials
+.envs/
+.venv/
+venv/
+.env
+.env.*
+*.lic
+*.signature
+*.public_key
+licenseCfg.json
+
+# Local model weights, engines, wheels and recordings
+*.pt
+*.pth
+*.onnx
+*.onnx.data
+*.ggml
+*.engine
+*.trt
+*.whl
+*.tar
+*.mcap
+*.db3
+*.db3-*
+*.rrd
+
+# Editor, OS and temporary files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+*.bak
+
+# Deployment assets remain local; retain package discovery markers.
+/models/**
+!/models/COLCON_IGNORE
+/runtime/
+!/models/model_manifest.json
+
+# Keep the maintained efficiency/lifecycle regression checks.
+!test/
+test/*
+!test/test_worker_preload.py
+!test/test_backend_filter.py
+!test/benchmark_packet_transfer.py

@@ -1,0 +1,17 @@
+{
+  "repository": "PABannier/sam3.cpp",
+  "models": [
+    {
+      "filename": "sam3-q4_0.ggml",
+      "url": "https://huggingface.co/PABannier/sam3.cpp/resolve/main/sam3-q4_0.ggml",
+      "size_bytes": 706606590,
+      "sha256": "5dafc790c8493319f542f575e718084f4e0a452fd7e483c64853d33ffe3f1889"
+    },
+    {
+      "filename": "sam2.1_hiera_tiny_q4_0.ggml",
+      "url": "https://huggingface.co/PABannier/sam3.cpp/resolve/main/sam2.1_hiera_tiny_q4_0.ggml",
+      "size_bytes": 23584928,
+      "sha256": "c51e33b34ee880aa1782b65f718d1a3cbd2772d44e636f24bb5d841f14aa1d11"
+    }
+  ]
+}
